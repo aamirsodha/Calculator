@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="app.css">
+    
+</head>
+<body>
+        <div id="main">
+            <h2>Calculator</h2>
+            <input type="text" id="txtdisplay" disabled>
+            <div id="btndiv">
+                <button id="button-single" onclick="NumPress('7')">7</button>
+                <button id="button-single" onclick="NumPress('8')">8</button>
+                <button id="button-single" onclick="NumPress('9')">9</button>
+                <button id="button-single" onclick="Operator('x')">X</button>
+            </div>
+            <div id="btndiv">
+                <button id="button-single" onclick="NumPress('4')">4</button>
+                <button id="button-single" onclick="NumPress('5')">5</button>
+                <button id="button-single" onclick="NumPress('6')">6</button>
+                <button id="button-single" onclick="Operator('-')">-</button>
+            </div>
+            <div id="btndiv">
+                <button id="button-single" onclick="NumPress('1')">1</button>
+                <button id="button-single" onclick="NumPress('2')">2</button>
+                <button id="button-single" onclick="NumPress('3')">3</button>
+                <button id="button-single" onclick="Operator('+')">+</button>
+            </div>
+            <div id="btndiv">
+                <button id="button-single" onclick="clearall()">C</button>
+                <button id="button-single" onclick="NumPress('0')">0</button>
+                <button id="button-single" onclick="calculate()">=</button>
+                <button id="button-single" onclick="Operator('/')">/</button>
+            </div>
+            <div id="btndiv">
+                <button id="button-single" style="width: 100%!important;" onclick="clearHistory()">Clear History</button>
+            </div>
+
+        </div>
+        <div id="historydiv">
+            <h2>History</h2>
+            <div id="txthistorydiv">
+                
+            </div>
+            
+        </div>
+        <script src="app.js"></script>
+</body>
+</html>
